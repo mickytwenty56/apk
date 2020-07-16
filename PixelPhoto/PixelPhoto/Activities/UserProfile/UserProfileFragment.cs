@@ -485,16 +485,7 @@ namespace PixelPhoto.Activities.UserProfile
             {
                 if (Methods.CheckConnectivity())
                 {                    
-                    delegate{
-                    	AlertDialog.Builder alertDiag = new AlertDialog.Builder(this); 
-                    	alertDiag.SetTitle("Confirm Pay");
-                    	if (FollowButton.Tag?.ToString() == "true"){
-                    		alertDiag.SetMessage("Are you sure to pay?");
-                    	}else{
-                    		alertDiag.SetMessage("You may lose paid,are you sure?");
-                    	} 
-                    	alertDiag.SetPositiveButton("Yes", (senderAlert, args) => {
-							if (FollowButton.Tag?.ToString() == "true")
+                    		if (FollowButton.Tag?.ToString() == "true")
 		                    {
 		                        FollowButton.Tag = "false";
 		                        FollowButton.Text = Context.GetText(Resource.String.Lbl_Follow);
