@@ -500,13 +500,7 @@ namespace PixelPhoto.Activities.UserProfile
 		                        FollowButton.SetTextColor(Color.ParseColor("#000000"));
 		                    }
 		                    PollyController.RunRetryPolicyFunction(new List<Func<Task>> { () => RequestsAsync.User.FollowUnFollow(UserId) }); 
-                    	}); 
-				        alertDiag.SetNegativeButton("Cancel", (senderAlert, args) => { 
-				        	alertDiag.Dispose(); 
-				      	});
-				      	Dialog diag = alertDiag.Create(); 
-      					diag.Show();  	                    
-	                }
+                    
                 }
                 else
                 {
