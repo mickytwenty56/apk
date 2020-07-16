@@ -591,5 +591,6 @@
   <!--===============================================================-->  
   <string name="Lbl_PayStatus">Pay Status</string>
   <string name="Lbl_CardDetail">Card Details</string>
-  <string name="Lbl_Followers_Price">Follower Price</string>	
+  <string name="Lbl_Followers_Price">Follower Price</string>
+  <string name="Lbl_followPrice">FollowPrice</string>	
 </resources> 
