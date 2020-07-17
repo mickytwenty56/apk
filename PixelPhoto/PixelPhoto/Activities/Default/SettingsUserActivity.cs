@@ -25,7 +25,7 @@ using PixelPhoto.Helpers.Controller;
 using Exception = System.Exception;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
-namespace PixelPhoto.Activities.SettingsUser
+namespace PixelPhoto.Activities.Default
 {
     [Activity(Icon = "@mipmap/icon", Theme = "@style/MyTheme", ConfigurationChanges = ConfigChanges.Locale | ConfigChanges.UiMode | ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class SettingsUserActivity : AppCompatActivity, MaterialDialog.IListCallback, MaterialDialog.ISingleButtonCallback
