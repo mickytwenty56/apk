@@ -226,8 +226,8 @@ namespace PixelPhoto.Activities.Default
         {
             try
             {
-                //StartActivity(new Intent(this, typeof(LoginActivity)));
-                StartActivity(new Intent(this, typeof(SettingsUserActivity)));
+                StartActivity(new Intent(this, typeof(LoginActivity)));
+                //StartActivity(new Intent(this, typeof(SettingsUserActivity)));
                // Finish();
             }
             catch (Exception exception)
