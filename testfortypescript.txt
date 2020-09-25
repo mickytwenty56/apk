@@ -1,0 +1,38 @@
+1) class MyArray {
+  collection: Array<string | number | boolean> = [];
+  add(value: any) {
+    this.collection.push(value)
+  }
+  remove(value: any) {
+    this.collection = this.collection.filter(item=>item!=value)
+  }
+  getValues() {
+    let total: boolean, str_checkType: boolean, num_checkType: boolean, boolean_checkType: boolean;
+    str_checkType = this.collection.every(item => typeof item === "string")
+    num_checkType = this.collection.every(item => typeof item === "number")
+    boolean_checkType = this.collection.every(item => typeof item === "boolean")
+    total = str_checkType || num_checkType || boolean_checkType
+    if (!total || boolean_checkType) 
+        return null;
+    else
+        return this.collection;
+  }
+}
+
+
+
+
+3)
+const cache_fn = (n: number) => (n);
+
+const memoize = (fn: Function) => {
+  let cache: object;
+  return (arg:number) => {
+    Object.keys(cache).forEach(key=>{
+        if(+key == arg) return cache[arg];
+    })
+    let result = fn(arg);
+    cache.arg = result;
+    return result;
+  }
+}
